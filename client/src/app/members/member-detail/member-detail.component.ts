@@ -29,6 +29,7 @@ this.galleryOptions = [
     preview: false
   }
 ]
+
 }
 
 getImages(): NgxGalleryImage[] {

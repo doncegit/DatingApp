@@ -20,6 +20,7 @@ namespace API.Data.DTOs
         public string Interests { get; set; }
         public string city { get; set; }
         public string country { get; set; }
+        public string Gender {get; set; }
         public ICollection<PhotoDto> Photos { get; set; }
     }
 }

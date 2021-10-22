@@ -58,6 +58,9 @@ namespace API.Data.Migrations
                     b.Property<string>("country")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Gender")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Users");

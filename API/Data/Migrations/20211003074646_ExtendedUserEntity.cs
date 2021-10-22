@@ -64,6 +64,13 @@ namespace API.Data.Migrations
                 type: "TEXT",
                 nullable: true);
 
+            migrationBuilder.AddColumn<string>(
+                name: "Gender",
+                table: "Users",
+                type: "TEXT",
+                nullable: true);
+                
+
             migrationBuilder.CreateTable(
                 name: "Photos",
                 columns: table => new
@@ -131,6 +138,10 @@ namespace API.Data.Migrations
 
             migrationBuilder.DropColumn(
                 name: "country",
+                table: "Users");
+
+            migrationBuilder.DropColumn(
+                name: "Gender",
                 table: "Users");
         }
     }
